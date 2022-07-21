@@ -1,6 +1,9 @@
 disable-default-queries: true
 query-filters:
-  - include:
-      kind: path-problem
-  - exclude:
-      problem.severity: warning
+- include: 
+    kind: path-problem
+    precision: 
+    - very-high
+    - high
+- exclude:
+    problem.severity: warning
