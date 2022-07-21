@@ -41,7 +41,16 @@ jobs:
       uses: github/codeql-action/init@aeisenberg/unrevert-query-filters
       with:
         languages: javascript
-        packs: jf205/my-javascript-queries:Security/CWE-079
+        packs: jf205/my-javascript-queries
+        disable-default-queries: true
+        query-filters:
+          - include: 
+              kind: path-problem
+              precision: 
+              - very-high
+              - high
+          - exclude:
+              problem.severity: warning
         
         # If you wish to specify custom queries, you can do so here or in a config file.
         # By default, queries listed here will override any specified in a config file.
