@@ -44,7 +44,7 @@ jobs:
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
-      uses: github/codeql-action/init@aeisenberg/unrevert-query-filters
+      uses: github/codeql-action/init@v2
       with:
         languages: javascript
         packs: jf205/my-javascript-queries
