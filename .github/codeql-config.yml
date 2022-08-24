@@ -7,4 +7,5 @@ query-filters:
     - high
 - exclude:
     problem.severity: warning
+- exclude:
     id: js/html-constructed-from-input
