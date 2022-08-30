@@ -1,11 +1,7 @@
-disable-default-queries: true
 query-filters:
-- include: 
-    kind: path-problem
-    precision: 
-    - very-high
-    - high
 - exclude:
-    security-severity: medium
+    security-severity: 
+    - medium
+    - low
 #- exclude:
 #    id: js/html-constructed-from-input
