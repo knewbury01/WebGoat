@@ -3,5 +3,5 @@ query-filters:
     security-severity: 
     - medium
     - low
-#- exclude:
-#    id: js/html-constructed-from-input
+# - exclude:
+#     id: js/html-constructed-from-input
