@@ -1,7 +1,6 @@
 query-filters:
 - exclude:
     security-severity: 
-    - medium
-    - low
+    - 6
 # - exclude:
 #     id: js/html-constructed-from-input
